@@ -1,0 +1,33 @@
+ALGORITHM somme
+VAR
+    tab1: ARRAY_OF INTEGER[5];
+    tab2: ARRAY_OF INTEGER[5];
+    i,j:INTEGER;
+    sum:=0
+BEGIN
+    tab1=[1,2,3,4,5]
+    tab2=[2,4,6,8,9]
+    write("donner les élements de tableau1")
+    read(tab1)
+    write("donner les élements de tableau2")
+    read(tab2)
+
+    FOR i FROM 1 TO tab1.length STEP step  DO
+    FOR j FROM 1 TO tab2.length STEP step  DO
+    IF (tab1[i]=tab2[j]){
+        sum:=tab1[i]+tab2[j]
+    }
+    else IF (tab1[i]=!tab2[j]){
+        sum:=tab1[i]+tab2[j]
+    }
+        
+    END_IF
+        
+    END_IF
+
+    END_FOR
+    
+    END_FOR
+    write("la somme des élements est",sum)
+    
+END
